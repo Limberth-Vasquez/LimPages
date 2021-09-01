@@ -1,0 +1,495 @@
+body { 
+ width:100%; margin:0px; 
+ background-color:white; 
+ min-width:90%;
+ font-family:Lato; 
+}
+
+.main {
+    padding: 2.0661157024793388429752066115702%;
+	border:7px solid rgb(4,43,79 ); 
+}
+
+.gridbox {
+    margin-bottom: 2.0242914979757085020242914979757%;
+    margin-right: 2.0242914979757085020242914979757%;
+    float:left;
+}
+
+.gridmain {
+    width: 67%;  margin-top:0px;
+	position:absolute; top:185px; left:5%;
+}
+
+.gridright {
+    width: 24.481781376518218623481781376518%;
+    margin-right: 0;
+    text-align:center;
+	margin-top:33px; 
+	position:absolute; 
+	top:150px;
+	right:6%;
+}
+
+.right {
+	padding: 4.310344827586206896551724137931%;
+	padding-top:0px; 
+	text-align: left;
+font-family:Lato; }
+
+
+#deposito { position:absolute; top:0px; left:0%; width:93%; height:400px;
+   padding:3px; position:relative; 
+   }
+
+.header {    }
+ 
+.banner {
+	background-color:rgb(0,160,223); 
+	width:100%; 
+	height:160px; 
+}
+
+.titulo {
+	font-size: 25px;
+	margin:0px;
+	position: absolute;
+	top: 15px;
+	left:40px;
+	color: white;
+	margin-left: 0px;
+	padding:0px;
+	font-weight: bold;
+	font-family: Lato;
+	width: 650px;
+ }
+ 
+.peqCinta {
+	margin-left: 40px;
+	font-size: 20px;
+	position: absolute;
+	top: 80px;
+	color: white;
+	font-weight: bold;
+	font-family: Lato;
+   }
+
+#logoMep { position:absolute;
+     top:23px; right:320px; width:140px;  height:auto;  
+	 }
+
+#logoFod { position:absolute;
+     top:25px; right:20px; width:270px;  height:auto;   
+}
+	 
+.menuHorizontal  {  color:white;  width:90%; 
+      background-color:transparent; 
+      margin-top:3px; text-align:center; font-family:Lato;
+	  position:absolute; 
+	  top:140px;
+	  }
+	  
+.menuitemH { 
+	color: white; 
+	background-color:rgb(4,43,79);
+	line-height: 35px;
+	vertical-align: middle;
+    display:inline-flex;
+	height:35px; 
+	top:0px; 
+	font-size: 16px;
+	margin-right: 5px;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.menuitemH:hover {
+	font-size: 17px;
+	color:yellow;
+	background-color:rgb(0,160,233);
+	font-weight: bold;
+	color: black; }
+
+.menuNavegar { width:200px; position:absolute; right:0px;  top:150px; font-family:Lato;  }
+.menuitemN { width:3%; border-radius: 10px;  background-color:rgb(247,181,43); font-size: 19px; color: white; cursor: pointer;}
+.menuitemN:hover { background-color:black; color:white; font-weight: bold; }
+
+.footer {
+	position:absolute; bottom:0px; margin:0px; height:30px; text-align:center;
+	line-height: 30px;
+	vertical-align: top;
+	font-size:18px; width:100%; background-color:rgb(4,43,79); color:white; ;
+}
+
+.tituloD{
+	margin: 0px;
+	margin-bottom: 10px;
+	color: rgb(4 , 43, 79);
+	font-weight: bold;
+	font-size: 22px;
+	text-align: center;	
+}
+
+.consignaD{
+	margin-top: 0px;
+	margin-bottom: 10px;
+	color:  black;
+	font-size: 19px;
+	text-align: justify;
+	padding: 0px 20px 0px 20px;
+}
+
+.ilustracionD { border:1px solid black; font-size:19px;}
+
+   .descargaD {font-size:23px; font-weight:bold; }
+   .descargaD:hover{font-size:30px; }
+
+   .tituloL{font-size:22px; color:white; font-weight:bold; }
+   .textoL {font-size:17px; color:white; margin-top:10px;  }
+
+   .icoDescarga:hover {
+				-ms-transform: rotate(5deg); /* IE 9 */
+        -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+        transform: rotate(5deg); }
+		
+	  .icoMetafora:hover {
+				-ms-transform: rotate(-10deg); /* IE 9 */
+        -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+        transform: rotate(-10deg); }
+
+	.etiqD {border:1px solid red;
+		background-color:black;
+		font-style: italic; font-size:13px; color:white; font-weight:bold;
+		cursor: pointer; }
+
+		.pfondo{
+	border: 0px solid black;
+	min-width: 500px;
+	
+   }
+.grad {
+  background: -moz-radial-gradient(center, ellipse cover, rgba(30,87,153,1) 0%, rgba(89,148,202,1) 62%, rgba(95,154,207,0.7) 68%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(30,87,153,1) 0%,rgba(89,148,202,1) 62%,rgba(95,154,207,0.7) 68%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(30,87,153,1) 0%,rgba(89,148,202,1) 62%,rgba(95,154,207,0.7) 68%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.player { 
+  width:50px; z-index:10;}
+.player:hover { 
+   width:55px;}
+
+#pop1, #pop2, #pop3 	{
+	position: absolute;
+	color: rgb(117, 64, 17);
+	background-size: 100% 100%;
+	text-align: center;
+	margin: 0px;
+	z-index:51;
+	font-family: Lato;
+	font-size: 24px;
+	visibility: hidden;
+	}
+
+	.manual {font-family:"Lato";}
+	#ilustracion { color: white; background-color:rgb(9,11,10);border-radius:7px; border:3px solid darkgray; }
+
+  .newPlayer {
+	z-index: 450;
+	width: 130px;
+	height: 45px;
+	margin-left: 0px;
+	display: none;
+	opacity:1;
+	position: absolute;
+	text-align: center;
+	padding-left: 0px;
+	font-size: 30px;
+	font-weight:bold; 
+	color: lightblue;
+	border:1px solid rgb(4,43,79);
+	border-radius:5px; 
+	background-color:rgb(0,53,134);
+   }
+
+ .newPlayer:hover {opacity:0.8; background-color: darkblue; color:white; border:1px solid gray; }
+
+ .bNP , {  color:rgb(245,232,202);
+        font-family:'Lato';
+		    font-size:35px; .
+		    font-weight:bold; z-index:500; }
+
+	#estampilla {border : 1px solid white; background-color:darkgray; }
+	
+	.bNP:hover, .bNPL:hover { padding-left:3px;   cursor: pointer;z-index:525;}
+
+	.bNPL {  color:rgb(245,232,202);
+        font-family:'Lato';
+		    font-size:35px; .
+		    font-weight:bold; z-index:500; }
+	.bNPL:hover {color:yellow; padding-left:3px;   cursor: pointer;z-index:525;}
+
+
+	.cintilloPPT { background-color:black; color:white; width:100%; 
+	     font-size:29px; font-weight:bold; font-family:Lato ; margin:20px;  border-bottom:20px solid black;}
+
+	#pie	 { background-color:black; color:white; width:60%; 
+	     font-size:24px;  font-family:Lato ; font }
+
+
+.playerLateralRasgos { width:70%;  text-align:center; 
+	      background-color:rgb(0,160,223); border-radius: 25px;}
+
+		  .playerLateralRasgos:hover { background-color:rgb(4,43,79);  
+	      border-radius: 24px;  border: 2px solid white;}
+
+.contador {
+	background-color: rgb(4,43,79);
+	text-align: center;
+	font-size: 19px;
+	font-weight: bold;
+	font-family: Lato;
+	color: white;
+	border-radius: 5px; 
+}
+
+.contador:hover	{
+		background-color:darkblue; 
+	}
+
+noSelecionar {
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */
+}
+
+#orientacion { background-color:rgb(0,160,233); color:white;  font-size:19px; padding:10px;
+   border-radius:10px; margin-top:3px;  }
+
+.ideas { color:white;  background-color:black; border-radius: 6px;
+	   font-weight:900;}
+.ideas:hover {width:160px;  color:yellow; background-color:rgba(24,36,86,0.5);
+	    cursor:pointer; border:0px solid gray; }
+
+#infoPerfilar {  position:absolute; top:4%; left:25%; width:50%; text-align:center;
+	     background-color:rgb(12,24,38); color:white; border:1px solid gray;
+	     font-size:22px; font-weight:bold; font-family:Lato ; margin-top:5px;
+	     display:none;	z-index:200; min-width:600px;
+	}
+
+	.pizarraCode {color:white; background-color:darkblue;
+       border: 0px solid green; margin:25px;
+	      font-size:22px; font-family:Lato; margin:0px; text-align:left; margin-top:-1%; }
+
+.pizarraCode2 {color:white; background-color:black;
+       border: 0px solid green; margin:25px;
+	      font-size:26px; font-family:Lato; margin:0px; text-align:left; margin-top:-1%; }
+
+.vinculoCode {  
+ background-color:darkblue; color:yellow;   border-radius: 10px; }
+
+.vinculoCode:hover {  
+  font-style: italic;  color: orange;   font-size:29px;}
+
+.enConstruccion { 
+       color:black;  font-size:50px;}
+
+	
+#retroalimentar { 
+   display:none; z-index: 70; 
+   text-align:left; background-color:rgb(4,43,79);  height:40px; 
+   vertical-align:middle; 
+   position:absolute; left:30%; bottom:1%;
+   font-size:16px; 
+   font-weight:bold; color:white; margin:0px;   position:absolute;   padding: 0px 5px 0px 5px; 
+   }
+
+#ilustracion { }
+
+#video {
+	  display:none;
+    border:10px solid rgb(0,32,96); 
+		position:absolute; z-index:62; 
+	}
+
+#denominacion {
+	  color:white; z-index:103;
+		display:none; border:1px solid white;
+		background-color:rgb(0,32,96);
+		position:absolute; height:auto;
+		font-size:20px; font-weight:bold;
+		text-align:center;
+}
+
+.destacado { 
+    font-size: 17px;  color:yellow; text-decoration: underline; }
+.destacado:hover {  
+    color:orange;    -moz-text-decoration-color: white; /* Code for Firefox */
+    text-decoration-color: white;  font-style: italic;  font-size: 19px;}
+
+.destacarCode { 
+	color:white; background-color:darkgreen;  font-size:31px;  border-radius:7px;}
+
+#infoConnotar{ position:absolute;
+	display:none;   z-index:21;
+ }
+ 
+/* css para retroalimentar las opciones de aprendizaje */ 
+.icoAp {  position:relative; cursor:pointer; }
+.icoMetaf { cursor:pointer; }
+
+.icoAp::before {  text-align:center; border-radius:10px; font-size:15px; font-family:Lato;   z-index:20;   }
+
+.icoAp:hover::before {
+	box-shadow: 3px 3px 5px rgb(4,43,79),
+	     0px -20px 15px rgb(4,46,79);
+	width:400px; 
+	 font-size:18px;
+  content: attr(data-titulo);
+  position:absolute;
+  top:100px;  left:-5px; 
+  background-color:#A5E1F3;
+  color:black;
+  padding:5px;
+  border:1px solid rgb(4,43,79); 
+}
+
+.amarilloTexto { color:white; font-size:22px; font-weight:bold; border-radius:5px;background-color: rgb(4,43,79); font-family:consolas; }
+.amarilloTexto:hover { color:#ffa500; font-size:24px; }
+.tlateral {font-size:29px; font.weight:bold; color:darkblue;  padding-left:10px;  }
+
+.textoBoton { color:white; font-size:22px; font-weight:bold; border-radius:0px;background-color:rgb(4,43,79);  }
+.textoBoton:hover { color:#ffa500; font-size:23px; }
+.textoBoton:hover::before {
+	box-shadow: 3px 3px 5px rgb(4,43,60),
+	     0px -10px 15px rgb(4,46,60);
+	  
+     content: attr(data-info);
+     position:absolute; top:-42px;  left:29px;
+     background-color:rgb(4,43,79);
+	   font-size:17px;
+     color:white;
+     padding:5px;
+		 border:1px solid white; 
+		 cursor: pointer;
+}
+
+
+#zonaDigitar { font-family:Lato; color:white;  font-size:30px; display:none;
+      background-color:rgba(4,43,79, 1); border-radius:5px; padding:10px; text-align:center;
+      box-shadow: 1px 1px 1px white; z-index:61;  }
+	  
+
+#zonaDigitar0 { font-family:Lato; color:white;  font-size:15px; display:none;
+      background-color:rgba(4,43,79, 0.7); border-radius:5px; padding:15px; text-align:center;
+      box-shadow: 1px 1px 1px white;  z-index:50;	 	  }
+
+.animame { border-radius:20px; } 
+
+
+/*
+   -----------------------------   Zona de caracteristcas estericas de los objetos de la animaciones 
+*/
+.parqueados {opacity:0; position:absolute;  }
+
+
+.lamina1 {	width: 890px; height:100px; background-color:rgba(4,43,79,0.9); z-index:0;  left:-900px; }
+
+.lamina2 {	width: 100px; height:110px; background-color:rgba(4,43,79,0.9); z-index:1; top:1500px; }
+
+#imagen { left:-100px; top:-100px; z-index:10; }
+
+#tituloAn {top:-100px; top:20%; left:20%;   width:80%;  font-weight:bold; color:darkblue;  }
+
+/*
+   -----------------------------  Fin de zona animacion  
+*/
+
+
+
+.palabraCaliente { font-weight:bold; font-family:Lato;  font-size:22px; background-color:black ;color:orange; font-weight:bold;  border-radius:5px;}
+.palabraCaliente:hover {  
+    font-size:22px; color:white; background-color:black; border-radius:5px; }
+
+.palabraCaliente:hover::before { 
+     box-shadow: 3px 3px 5px rgb(4,43,79),
+	     0px -10px 15px rgb(4,46,79);
+	 width:250px; 
+     content: attr(data-info);
+     position:absolute; top:-30px;  left:210px;
+     background-color:#A5E1F3;
+	 font-size:19px;
+     color:black;
+     padding:5px;
+     border:1px solid rgb(4,43,79); 
+	 
+}
+
+#textoIndagar   {margin-top:9%; font-size:20px;  }
+
+#recolectorMM { margin-top:100px;  text-align:center;  }
+
+#paginaPotter {text-align:left; width:100%;  margin-top:7%;  }
+.parrafoPotter {font-size:25px; margin-left:15px;  }
+
+#parrafo1{ }
+
+#primerColumnaP { }
+#segundaColumnaP {   }
+
+#ilustraPotter { margin-right:10px; position:relative; }
+#ilustraPotter:hover::after { 
+     box-shadow: 3px 3px 5px rgb(4,43,79),
+	     0px -10px 15px rgb(4,46,79);
+	 width:250px; 
+	 position:absolute;
+	 top:-10px;
+	 right:2px;
+     content: attr(data-retro);
+     background-color:#A5E1F3;
+	 font-size:18px;
+     color:black;
+     padding:5px;
+     border:1px solid rgb(4,43,79); 
+	 border-radius:5px;
+	 font-family:Lato; font-weight:bold;
+}
+
+#potterRetroA { display:none;  }
+
+
+.potterPalabra { 
+	 border-radius:5px;
+	 background-color: rgb(4,43,79);
+	font-size:25px ;  border:1px solid white; 
+}
+.potterPalabra:hover {
+	 font-weight:bold; 
+	 font-size:27px ; 
+	 color:white;   border:1px solid white; 
+}
+
+#player2 {z-index:100; border: 2px solid gray; background-color:rgb(4,43,79); border-radius:15px; height:60px; }
+#player2:hover {  background-color:darkgreen;}
+
+.icoMiniWeb {  color:black;  z-index:300; }
+.icoMiniWeb:hover::after {
+	box-shadow: 3px 3px 3px yellow ,
+	     0px -10px 15px black ;
+	 width:150px; 
+	 position:absolute;
+	 top:0px;
+	 right:-160px;
+     content: attr(data-info);
+     background-color:black;
+	 font-size:16px;
+     color:white;
+     padding:5px;
+     border:1px solid rgb(4,43,79); 
+	 border-radius:5px;
+	 font-family:Lato; 
+	
+}
+
+.retroMetafora {
+	position:absolute; bottom:-10px; left:80%; 
+}

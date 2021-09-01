@@ -1,0 +1,78 @@
+body { 
+ width:100%; margin:0px; 
+ background-color:white; 
+ min-width:90%;
+ font-family:Lato; 
+}
+
+.icoDescarga { position:absolute;}
+
+ .icoDescarga:hover {
+				-ms-transform: rotate(5deg); /* IE 9 */
+        -webkit-transform: rotate(5deg); /* Chrome, Safari, Opera */
+        transform: rotate(5deg); }
+
+.boton:hover::before {  font-size:18px;
+      content: attr(data-titulo);
+	  position:absolute;
+      bottom:-20px;  right:0px; 
+       background-color:black;
+	   font-family:"Consolas";
+       color:white;
+       padding:5px;
+       border:1px solid rgb(4,43,79); 
+	   border-radius:7px; 
+}
+
+#icoEvaluador, .boton {
+	position: absolute; 
+	bottom:30px;
+    right:20px;	
+}
+
+#salida { position: absolute; left: -50%; top: -150%; display:block; } 
+#conteoVal {position:absolute; bottom:-25px; right:170px;  font-size:26px; color:darkblue; font.weight:bold; }		
+		
+header {text-align:center;  width:90%; margin:0px; font-size:35px; }
+.manipulable{ position:absolute; cursor:move; width:100px; left:35px; }
+.quedito{ position:absolute; width:100px; left:35px; }
+
+.over {box-shadow: 0px 0px, 5px 0px rgba(0,0,0,0.4);  transform:scale(1.1);}
+
+#pieza1 {top:465px; left:500px; width:60px;}
+#pieza2 {top:465px; left:620px; width:70px;}
+#pieza3 {top:450px; left:740px; width:65px;}
+#pieza4 {top:450px; left:860px; width:65px;}
+#pieza5 {top:450px; left:980px; width:50px;}
+#pieza6 {top:200px; left:910px; width:50px;}
+#pieza7 {top:180px; left:1270px; width:50px;}
+#pieza8 {top:465px; left:1080px;width:70px;}
+#pieza9 {top:200px; left:555px; width:70px;}
+
+.texto { font-family:Lato; font-size:27px;  text-align:center; font-weight:bold;  }
+#texto1 { position:absolute; top:100px; left:140px;  width:200px; font-size:25px; }
+#texto2 { position:absolute; top:290px; left:140px;  width:200px; font-size:25px;}
+#texto3 { position:absolute; top:450px; left:140px;  width:200px; font-size:25px;  }
+#llave { position:absolute; top:50px; left:550px; height:400px; z-index:3 ; }
+#fuente { position:absolute; bottom:15px; left:35%;   display:none}
+#fondo {  position:absolute; bottom:15px; left:15%; font-size: 17px;  }
+#frente {  position:absolute; top:25px; left:15%; font-size:17px; }
+#player {  position:absolute; top:60px; left:100px; height:40px; border:1px solid blue; }
+
+
+
+#coordenadasMouse {
+	position:absolute; left:1035px; top:50px;
+}
+#continuar {  width:100%;  position:absolute; z-index:1000 ; 
+    top:0px; left:0px; color:white;  font-size:40px;
+     background-color:darkblue ; opacity:0.93;  border-radius:10px;
+     height:400px; text-align:center;   }
+
+#creditosBot {  position:absolute; bottom:20px; left:0.5%;}
+.icoCreditos:hover {transform: rotate(5deg);}
+     
+ #creditos { position:absolute; bottom:5px; left:12%;
+         color:white; background-color:black; border-radius: 5px;
+          display:none; text-align:center ; width:20%;  
+         font-size:16px; z-index:30 ;  }

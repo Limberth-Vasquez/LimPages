@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" type="text/css" href="./head/estilosn6.css">
+<script type="text/javascript" src="./head/herramientas.js"></script>
+<title>Portada EsferaAp 3er. año</title>
+
+<style>
+body {background-color: black; }
+#cielo {width:100%; display:none; }
+#colina { width:100% ; display:none;}
+#pie {position: absolute;  bottom:0px; height:3px;
+   background-color:blueviolet ; width:100%; margin:0px; }
+
+#botonU1 {position: absolute;  bottom:24.5%; left:31%; text-align:center; width:250px; cursor:pointer; transform: rotate(-5deg); }
+#botonU2 {position: absolute;  bottom:48%; left:52%; text-align:center; width:250px; cursor:pointer; }
+#botonU3 {position: absolute;  bottom:59%; left:74%; text-align:center; width:250px; transform: rotate(5deg);cursor:pointer; }
+#titulo {position: absolute;  bottom:24%; right:10%; color:white; font-size:31px;  text-align:center;  }
+#botonU4 {position: absolute;  bottom:3%; right:5%; font-size:12px; text-align:center; width:250px; transform: cursor:pointer; }
+
+</style>
+
+<script>
+function empezar(){
+  tope= document.getElementById("pie").getBoundingClientRect().top; 
+  document.getElementById("cielo").style.height=tope+"px";
+  document.getElementById("colina").style.height=tope+"px";
+  document.getElementById("cielo").style.display="block"; 
+  document.getElementById("colina").style.display="block";  
+}
+
+window.onload=empezar;
+</script>
+</head>
+<body>
+
+<img id="cielo" src="./recursos/contenidos33/cielo.png" />
+<img id="colina" src="./recursos/contenidos33/montana.png" style="position:absolute; top:0px;"/>
+<p id="pie" ></p>
+<p id="botonU1" onclick="visitarEsfera('./EsferaTerceroU1.html' );"><span data-info="Unidad no. 1" title="Clic para entrar." class='textoBoton'>&nbspMúsica&nbsp<br/> &nbsp y &nbsp<br/>&nbspBaile&nbsp</span></p>
+<p id="botonU2" onclick="visitarEsfera('./EsferaTerceroU2.html' );"><span data-info="Unidad no. 2" title="Clic para entrar." class='textoBoton'>&nbspGeometría&nbsp<br/> &nbsp y &nbsp<br/>&nbspNaturaleza&nbsp</span></p>
+<p id="botonU3" onclick="visitarEsfera('./EsferaTerceroU3.html' );"><span data-info="Unidad no. 3" title="Clic para entrar." class='textoBoton'>&nbspFantasía Musical&nbsp<br/>&nbspcon fractales&nbsp</span></p>
+<p id="titulo" >Música, Arte y Naturaleza<br/>3er. año</p>
+<p id="botonU4" onclick="visitarEsfera('./recursos/contenidos33/indica.html' );"><span data-info="Sobre las esferas." title="Clic para ver." class='textoBoton'>&nbspIndicaciones&nbsp</span></p>
+<script src="./head/greensockjs/src/uncompressed/TweenMax.js" ></script>
+<script src="./head/greensockjs/src/uncompressed/TimelineLite.js" ></script> 
+</body>
+
+
+
+
+

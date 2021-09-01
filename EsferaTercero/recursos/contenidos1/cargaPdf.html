@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" >
+<title>PDF infográfico + Audio</title>
+<head>
+<script>
+var player;
+function empezar() {
+   player= document.getElementById("player"); 
+   player.setAttribute("src","./ListaEnlaces.mp3");
+}
+
+function cerrarPestana(){
+ player.pause();
+}
+</script>
+</head>
+<body onload="empezar()"  onunload="cerrarPestana()" style="text-align:center; background-color:black; ">
+<iframe src="./2.2ListaEnlaces.pdf" style=" width:85%; height:770px; background-color:black; "   ></iframe  >
+<audio id="player" controls  style="display:block; position:absolute; top:25px;left:30px; height:50px; "></audio>
+</body>
+</html>

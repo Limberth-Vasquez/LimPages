@@ -1,0 +1,99 @@
+<!--PROTOTIPO DE TRABAJO PARA ESFERAS DE APRENDIZAJE PRONIE-MEP-FOD  (experiencias prácticas de Efraín) -->
+<!DOCTYPE html>
+<head>
+ <meta charset="UTF-8" >
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <link rel="stylesheet" type="text/css" href="./head/estilosn6.css">
+ <link rel="stylesheet" type="text/css" href="./head/estilosAnimar.css">
+ <script type="text/javascript" src="./head/herramientas.js"></script>
+ <script type="text/javascript" src="./head/desplieguesU1.js"></script>
+ <title>Unidad 1</title>
+ <script>
+function arrancar () {
+     var fod=document.getElementById("logoFod"); 
+	var mep=document.getElementById("logoMep"); 
+	digitarSobre ("zonaDigitar0",500, 10,"..::Música y Baile::.." , 50, 18 ,22, -1);
+    }
+  </script>
+</head>
+<body>
+ <div class="header" >
+   <div class="banner">
+	   <p class="titulo" ><br/>MÚSICA, ARTE Y NATURALEZA.<br/>LIE++, Tercer Año.</p>
+	   <p class="peqCinta"  > &nbsp;<span style="font-size:32px;" ></span></p>
+	   <img id="logoMep" src="./recursos/iconos/logomep.png" />
+	   <img id="logoFod" src="./recursos/iconos/logoFod.png" />
+   </div>
+  <div class="menuHorizontal">
+  <span class="menuitemH"  title="Para construir y modificar archivos de audio." onclick="s(1); sl(1); playExplain ('./recursos/contenidos1/Audios/Pestaña1.mp3 '); " >
+  &nbsp;&nbsp; 1.&nbsp;Mi primer programa musical&nbsp;&nbsp;</span>
+  <span class="menuitemH" title="Para controlar efectos de audio sincronizado." onclick="s(2); sl(2); playExplain ('./recursos/contenidos1/Audios/Pestaña2.mp3 '); "  >
+  &nbsp;&nbsp; 2.&nbsp;Un loco arreglo musical&nbsp;&nbsp;</span>
+  <span class="menuitemH" title="Para elaborar una presentación digital programada." onclick="s(3); sl(3); playExplain ('./recursos/contenidos1/Audios/Pestaña3.mp3 ');" >
+   &nbsp;&nbsp; 3.&nbsp;Sprint de animación musical&nbsp;&nbsp;</span>  
+ <span class="menuitemH" title="Para compartir mis creaciones." onclick="s(4); sl(4); playExplain ('./recursos/contenidos1/Audios/Pestaña4.mp3 ');" >
+   &nbsp;&nbsp; 4.&nbsp;Compartiendo mi animación musical&nbsp;&nbsp;</span>  
+
+</div>
+</div>
+<p id="zonaDigitar0"></p>
+<div class="gridbox gridmain">
+  <div id="deposito" style="" class="main">
+  <h1 id="titulo" class="tituloD" >Creaciones con Prototipos.</h1>
+  <p id = "consigna" class='consignaD' >En esta unidad utilizaremos la computadora y sus dispositivos de entrada y salida, para producir y modificar archivos de audio, así como la resolución de problemas para la programación.</p>		
+  <div  class='' style='margin:0px; z-index:20; ' >
+  </div>
+</div>	
+</div>
+
+<!-- Elementos para animación inicial -->
+<p id="tituloAn"  class="parqueados" style="font-size:40px; font-family:consolas; " >Música y Baile</p>
+<img id="imagen" sytle="margin-left:5px; " class="parqueados" src="./recursos/iconos/musica.jpg" alt="Pizarra de Recursos y Orientaciones." >
+<p id="textoLateral2" style=" width:20%;" class="parqueados tlateral">Una aventura de<br/> programación<br/>integrando música,<br/>sonido y mezclas de <br> audio.</p>
+<div id="laminaH" class="parqueados lamina1"></div>    <p id="laminaV" class="parqueados lamina2"></p>
+<div  class='icoMetaf'     style=' text-align:center; margin:0px;' >
+	<img  id="icoAu" class='icoMetafora'  title='Audio'
+	style='width:70px;  position:absolute; top:200px; left:6%; width:50px;  margin-top:0px;  '  src='./recursos/iconosN/icoAudio.png'
+	onclick= "playExplain ('./recursos/contenidos1/Audios/Actividad0.mp3 ');"/>
+  </div>
+
+<div class="menuNavegar">
+  <span class="menuitemN" title="Unidad 2" onclick="location.href = './EsferaTerceroU2.html'; "  >&nbsp;&nbsp;U2&nbsp;&nbsp;</span>
+  <span class="menuitemN" title="Unidad 3" onclick="location.href = './EsferaTerceroU3.html'; "  >&nbsp;&nbsp;U3&nbsp;&nbsp;</span>
+  <span onclick="presentarCreditos();" class="menuitemN"  title="Créditos."  >&nbsp;Créditos&nbsp;</span>
+</div>
+<div class="gridbox gridright">
+            <div id="lateral" class="right" style="background-color:white; margin:0px;">
+	             <span id="bNP3L" style="font-size:18px; color: black; margin:3px 0px 3px 0px; text-align: left;"> Orientaciones didácticas:</span>
+	             <div id="playerLateral" class="playerLateral  playerLateralRasgos" text-align="center">
+                  <span id="bNP1L" class="bNPL noSeleccionar" title="retroceder"  onclick="andarSl(-1);">&nbsp;-&nbsp;&nbsp;</span>
+	               <span id="bNP2L" class="bNPL noSelecccionar" title="avanzar" onclick="andarSl(1);" >+&nbsp;&nbsp;</span>
+		            <span id="contador" class="contador noSelecccionar" title="no. de orientación">&nbsp;#/#t&nbsp;</span>
+				   </div>
+				 <div id="orientacion" ></div>
+		  </div>
+    </div>
+<p class="footer"> PRONIE &nbsp MEP-FOD &nbsp (2020) </p>
+<div id="contenedorEstampilla" ></div>
+<audio id="player" ></audio>
+<audio id="player2" ></audio>
+<video id="video"  ></video>
+<p id="denominacion"></p>
+
+<div id="pop1"></div>
+<div id="pop2"></div>
+<div id="pop3"><div id="ilustracion" style='visibility:hidden;'></div> <span id="pie" style='visibility:hidden; ' ></span></div>
+<div id="pop4"></div>
+<img id="apuntador"/>
+<div id="newPlayer" class="gradNewPlayer newPlayer">
+       <span id="bNP1" class="bNP" title="Retroceder"  onclick="backPPT();">&lt; &nbsp;</span>
+	   <span id="bNP2" class="bNP" title="Avanzar" onclick="advancePPT();" >&gt; &nbsp;</span>
+	   <span id="bNP3" class="bNP" title="Cerrar" onclick="offPPT();">&#120;</span>
+</div>
+<p id="infoPerfilar"></p>
+<img id="infoConnotar"/>
+<p id="zonaDigitar"></p>
+<script src="./head/greensockjs/src/uncompressed/TweenMax.js" ></script>
+<script src="./head/greensockjs/src/uncompressed/TimelineLite.js" ></script>
+</body>
+</html>

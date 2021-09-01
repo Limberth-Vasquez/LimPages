@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" type="text/css" href="reglasManipulable.css">
+  <script type="text/javascript" src="manipulable.js"></script>
+   <script type="text/javascript" src="modeloGeo.js"></script>
+  <title>Constructivo manipulable</title>
+</head>
+<body>
+<header>Procesamiento de Datos</header>
+ <img id="pieza1" class="manipulable" style="z-index:50;" src="n5.png"/>
+ <img id="pieza2" class="manipulable" style="z-index:8;"  src="n2.png"/>
+ <img id="pieza3" class="manipulable" style="z-index:30;" src="n4.png"/>
+ <img id="pieza4" class="manipulable" style="z-index:10;" src="n3.png"/>
+ <img id="pieza5" class="manipulable" style="z-index:20;" src="n1.png"/>
+ <img id="pieza6" class="quedito" style="z-index:40;" src="n7.png"/>
+ <img id="pieza7" class="quedito" style="z-index:60;" src="n8.png"/>
+ <img id="pieza8" class="manipulable" style="z-index:15;" src="n6.png"/>
+ <img id="pieza9" class="quedito" style="z-index:55;" src="n9.png"/>
+
+
+ <img id="llave" style="z-index:1; width:800px; "  src="llave.png"/>
+ <p id="texto1" class="texto">Para explicar como ocurre el procesamiento de datos que realiza la computadora cuando grabamos un sonido, ordene en secuencia las imágenes que aparecen en la parte inferior.</p>
+ <p id="texto2" class="texto"></p>
+ <p id="texto3" class="texto">Damos clic a los engranajes para evaluar el resultado.</p>
+ 
+ <p id="creditos">Diseño: Andrey Barrantes B.<br/>Desarrollo: Efraín López M.</p>
+
+ <img id="creditosBot" class="icoCreditos" style="width:150px; " src="botonCreditos.png"
+ onmouseover="retroAlimentar();" onmouseout="quitarRetro();" />
+
+ <div  class="boton" data-titulo="Valorar..." >
+ <img title="Clic para" id="icoEvaluador" onclick="valorar();" class="icoDescarga" style="z-index:30;" width="110" src="gear.png"/>
+ </div>
+ <img id="salida"  class=" " style="z-index:30;" width="110" src=" "/>
+ <p id="conteoVal">0</p>
+ <div id="continuar" onclick="darBienvenida();" title="Clic para continuar"><br/><br/><br/><br/><br/>Estamos llegando a un constructivo...<br/><br/>
+ <span style="font-size:25px;">pulsa clic para continuar...</span></div>
+ <audio id="player" controls title="Escuchen esta explicación..." ></audio>
+ <script src="../../../head/greensockjs/src/uncompressed/TweenMax.js" ></script>
+ 
+</body>

@@ -1,0 +1,12 @@
+teclas del constructivo manipulable: control de estados.
+
+"0" : 49
+
+"1": 48
+
+"x": 120
+
+"q" : 113
+
+Ojo indagar que pasa en las lista de inserciones de eventos de arrastre. 
+ 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+ <meta charset="UTF-8" >
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+ <title>Indicaciones 2do grado.</title>
+</head>
+
+<style>
+.flotante { position:absolute; z-index: 3;}
+body { margin:0px; font-family: lato;}
+#tit {  font-size:32px ;color:white ; top:3%; text-align:center; left:35%;  } 
+#parraf1 { font-size:22px ;color:rgb(110, 160, 236) ; top:15%; text-align:center; left:28%; width:65% ; }
+#parraf2 { font-size:22px ;color:rgb(110, 160, 236) ; top:35%; text-align:justify; left:4%; width:43% ; }
+#parraf3 { font-size:22px ;color:rgb(110, 160, 236) ; top:30%; text-align:justify; left:52%; width:42% ; }
+b { color:lightgreen;}
+#marca { position: absolute;  bottom:0px; background-color:orange; 
+        z-index:2;  margin:0px; height:0px; }
+
+</style>
+<script>
+
+function empezar(){
+    tope= document.getElementById("marca").getBoundingClientRect().bottom; 
+    document.getElementById("fondo").style.height=tope+"px";
+    document.getElementById("fondo").style.display="block"; 
+}
+
+window.onload=empezar; 
+
+</script>
+<body>
+<p id="marca"></p>
+<img id="fondo" src="esfera.png" style="width:100%; margin:0px; display:none; ">
+<p id="tit" class="flotante">Presentación acerca de las <b>Esferas de Aprendizaje</b></p>
+<p id="parraf1" class="flotante" >Este recurso didáctico para la organización y gestión del aprendizaje es un complemento de la Propuesta Didáctica <b>LIE++</b> para tercer año.</p>
+<p id="parraf2" class="flotante" >Está organizado por <b>Unidades</b> y éstas a la vez en <b>Actividades</b> de aprendizaje por  medio de un menú de pestañas. <br/><br/>En cada actividad de aprendizaje se encuentran los recursos creados para apoyar su desarrollo. <br/><br/>No todas las actividades cuentan con un recurso. Para facilitar su ubicación se han numerado de acuerdo a la actividad que corresponden en la Propuesta Pedagógica. <br/><br/>Al inicio de cada unidad, a la derecha de la pantalla se indica la finalidad de esta unidad, los resultados de aprendizaje que se pretenden alcanzar y las ideas poderosas que se trabajan.</p>
+<p id="parraf3" class="flotante" ><br/>En el inicio de cada actividad, a la derecha de la pantalla, se resalta la finalidad de la actividad y se colocan los recursos descargables para el docente.
+ <br/><br/>Los recursos son variados, se cuenta con videos, fichas, guías de trabajo, ejercicios de comprobación, entre otros. 
+<br/><br/>El propósito de este recurso didáctico es que los educadores <b>visualicen</b> los materiales antes de desarrollar la clase para su uso oportuno, los<b>dosifique</b> dependiendo del ritmo de aprendizaje de los estudiantes, <b>descarguen</b> o <b>impriman</b> el material que necesiten.</p>
+</body>
