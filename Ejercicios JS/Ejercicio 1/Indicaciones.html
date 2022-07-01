@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <link rel="stylesheet" href="./css/solucion.css">
+</head>
+
+<body>
+    <div class="borde">
+        <h3>Ejercicio 1 Bombilla</h3>
+        <p>JavaScript puede modificar atributos del HTML.</p>
+
+        <p>En este caso, JavaScript cambia el valor del atributo src (fuente) de una imagen.</p>
+
+        <button id="btnEncender">Enciende la luz</button>
+
+        <img id="myImage" src="./img/pic_bulboff.gif" style="width:100px">
+
+        <button id="btnApagar">Apaga la luz</button>
+    </div>
+
+    <div class="instrucciones">
+        <h3>Instrucciones para realizar el ejercicio</h3>
+        <ol>
+            <li> Descargue la imagen de la bombilla encendidad <a href="./img/pic_bulbon.gif" download="pic_bulbon"><strong>acá</strong></a></li>
+            <li> Descargue la imagen de la bombilla apagada <a href="./img/pic_bulboff.gif" download="pic_bulboff"><strong>acá</strong></a></li>
+            <li>En el HTML, cree un boton para encender la luz con su respectivo id</li>
+            <li>En el HTML, cree una imagen y referencia la imagen <strong>pic_bulboff</strong></li>
+            <li>En el HTML, cree un boton para apagar la luz con su respectivo id</li>
+            <li>En el JS, declare y inicialice 3 variables con los 2 botones y la imagen mediante <strong>document.getElementById('...')</strong></li>
+            <li>A ambos botones agreguele el evento click con el <strong>addEventListener</strong></li>
+            <li>Cree una funcion Encender() y cambie en esta el atributo src de la imagen</li>
+            <li>Cree una funcion Apagar() y cambie en esta el atributo src de la imagen</li>
+        </ol>
+    </div>
+    <footer class="footer-area section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+                <!-- <ul class="social-icon">
+                  <li>
+                    <a class="facebook" href="https://www.facebook.com/limberth.vasquezquesada/"><i class="icon-social-facebook"></i></a>
+                  </li> -->
+                  <!-- <li>
+                    <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+                  </li> -->
+                  <!-- <li>
+                    <a class="instagram" href="https://www.linkedin.com/in/limberth-v%C3%A1squez-quesada-490361150/"><i class="icon-social-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a class="instagram" href="mailto:limberthvaquez@gmail.com"><i class="icon-social-google"></i></a>
+                  </li>
+                </ul> -->
+                <p id="copyright">Copyright © All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="./js/solucion.js"></script>
+</body>
+</html>

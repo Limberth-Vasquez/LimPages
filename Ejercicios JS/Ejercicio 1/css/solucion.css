@@ -1,0 +1,30 @@
+body {
+    font-family: Vedana, Geneva, Tahoma, sans-serif;
+}
+
+.borde,
+.instrucciones {
+    margin: auto;
+    padding: 20px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.borde {
+    text-align: center;
+    border: 1px solid black;
+}
+
+.instrucciones h3 {
+    text-align: center;
+}
+
+li {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+footer{
+    text-align: center;
+    margin: auto;
+}
