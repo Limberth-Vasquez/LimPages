@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div class="contenedor">
+
+        <h2>Cuenta principal (A)</h2>
+        <div>
+            <label for="txtSaldoFavorA">Saldo a favor:</label>
+            <output id="txtSaldoFavorA"></output>
+        </div>
+        <br>
+        <div>
+            <label for="">Monto a transferir: </label>
+            <input type="number" min="0" id="txtTransaccionA" placeholder="Indique monto a transferir">
+            <input type="button" value="Transferir" id="btnTransferirA">
+        </div>
+    </div>
+    <div class="contenedor">
+
+        <h2>Cuenta principal (B)</h2>
+        <div>
+            <label for="txtSaldoFavorB">Saldo a favor:</label>
+            <output id="txtSaldoFavorB"></output>
+        </div>
+        <br>
+        <div>
+            <label for="">Monto a transferir: </label>
+            <input type="number" min="0" id="txtTransaccionB" placeholder="Indique monto a transferir">
+            <input type="button" value="Transferir" id="btnTransferirB">
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

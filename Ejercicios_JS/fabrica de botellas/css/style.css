@@ -1,0 +1,43 @@
+header{
+ width: 100%;
+ font-family: 'Sansita', sans-serif;
+}
+header h1 , h2, form{
+ margin-left: 50px;
+}
+header input{
+  width: 110px;
+}
+body{
+  background-image: url(../img/botellas-plasticas.jpg);
+  background-size: 84%;
+  padding: 0 220px 0 220px;
+  color: #252b4e;
+  font-family: 'Sansita', sans-serif;
+}
+body .sect2{
+  width: 900px;
+  border: 0.5px solid black;
+  border-radius: 30px;
+  padding-bottom: 25px;
+  background: rgb(231, 231, 231);
+  opacity: .8;
+}
+hr{
+  width: 840px;
+  border-style: ;
+  border: 1.5px dotted black;
+}
+.error{
+  border: 2px solid red;
+}
+.div_izq{
+  float: left;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+footer{
+  margin-left: 50px;
+  clear: both;
+}

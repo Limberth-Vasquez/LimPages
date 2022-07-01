@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Fábrica de botellas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
+  </head>
+  <body class="dias">
+    <section class="sect2">
+        <header>
+            <h1>Fábrica de botellas</h1>
+            <h2>Bienvenido</h2>
+
+            <form>
+                  <label for="IPF">IPF: </label>
+                  <input type="number" id="IPF" placeholder="Ingrese el IPF" min="1">*
+
+                  <label for="IPP">IPP: </label>
+                  <input type="number" id="IPP" placeholder="Ingrese IPP" min="1">*
+
+                  <label for="numPlanta">Plantas: </label>
+                  <input type="number" id="numPlanta" placeholder="Cantidad plantas" min="1">*
+              </form>
+          </header>
+          <main>
+            <hr>
+            <h2>Registro semanal de botellas para cada una de las plantas</h2>
+            <div class="div_izq">
+
+                <label for="numPlantas">Planta</label>
+                <input type="number" id="numPlantas" placeholder="Ingrese número de planta ">*<br><br>
+
+                <label for="day1">Día 1</label>
+                <input type="number" id="day1" placeholder="Cantidad botellas del dia 1">*<br><br>
+
+                <label for="day2">Día 2</label>
+                <input type="number" id="day2" placeholder="Cantidad botellas del dia 2">*<br><br>
+
+                <label for="day3">Día 3</label>
+                <input type="number" id="day3" placeholder="Cantidad botellas del dia 3">*<br><br>
+
+                <label for="day4">Día 4</label>
+                <input type="number" id="day4" placeholder="Cantidad botellas del dia 4">*<br><br>
+
+                <label for="day5">Día 5</label>
+                <input type="number" id="day5" placeholder="Cantidad botellas del dia 5">*<br><br>
+
+                <label for="day6">Día 6</label>
+                <input type="number" id="day6" placeholder="Cantidad botellas del dia 6">*
+
+                <input type="button"  value="Registrar" id="btnRegistrar">
+             </div>
+             <div class="div_der">
+                <input type="box" id="oplan" disabled><br><br>
+                <input type="box" id="oday1" disabled><br><br>
+                <input type="box" id="oday2" disabled><br><br>
+                <input type="box" id="oday3" disabled><br><br>
+                <input type="box" id="oday4" disabled><br><br>
+                <input type="box" id="oday5" disabled><br><br>
+                <input type="box" id="oday6" disabled><br><br>
+             </div>
+          </main>
+          <hr>
+          <footer>
+              <label for="salida1">Resultado:</label><br>
+              <output id="salida1"></output><br>
+              <output id="salida2"></output><br>
+              <output id="salida3"></output><br>
+              <output id="salida4"></output><br>
+
+          </footer>
+
+              <script src="js/fabricalogic.js"></script>
+
+    </section>
+  </body>
+</html>
