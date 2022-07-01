@@ -5,9 +5,9 @@ body {
 .borde,
 .instrucciones {
     margin: auto;
-    padding: 20px;
+    /* padding: 20px;
     margin-right: 150px;
-    margin-left: 150px;
+    margin-left: 150px; */
 }
 
 .borde {
@@ -15,9 +15,9 @@ body {
     border: 1px solid black;
 }
 
-.instrucciones h3 {
+/* .instrucciones h3 {
     text-align: center;
-}
+} */
 
 li {
     margin-right: 100px;
