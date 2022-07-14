@@ -1,17 +1,1 @@
-'use strict';
-
-let btnEncender = document.getElementById('btnEncender');
-let btnApagar = document.getElementById('btnApagar');
-let imgBombilla = document.getElementById('myImage');
-
-
-btnEncender.addEventListener('click', Encender);
-btnApagar.addEventListener('click', Apagar);
-
-function Encender() {
-    imgBombilla.src = './img/pic_bulbon.gif';
-}
-
-function Apagar() {
-    imgBombilla.src = './img/pic_bulboff.gif';
-}
+var _0x68c6=["\x75\x73\x65\x20\x73\x74\x72\x69\x63\x74","\x62\x74\x6E\x45\x6E\x63\x65\x6E\x64\x65\x72","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x62\x74\x6E\x41\x70\x61\x67\x61\x72","\x6D\x79\x49\x6D\x61\x67\x65","\x63\x6C\x69\x63\x6B","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x73\x72\x63","\x2E\x2F\x69\x6D\x67\x2F\x70\x69\x63\x5F\x62\x75\x6C\x62\x6F\x6E\x2E\x67\x69\x66","\x2E\x2F\x69\x6D\x67\x2F\x70\x69\x63\x5F\x62\x75\x6C\x62\x6F\x66\x66\x2E\x67\x69\x66"];_0x68c6[0];let btnEncender=document[_0x68c6[2]](_0x68c6[1]);let btnApagar=document[_0x68c6[2]](_0x68c6[3]);let imgBombilla=document[_0x68c6[2]](_0x68c6[4]);btnEncender[_0x68c6[6]](_0x68c6[5],Encender);btnApagar[_0x68c6[6]](_0x68c6[5],Apagar);function Encender(){imgBombilla[_0x68c6[7]]= _0x68c6[8]}function Apagar(){imgBombilla[_0x68c6[7]]= _0x68c6[9]}
