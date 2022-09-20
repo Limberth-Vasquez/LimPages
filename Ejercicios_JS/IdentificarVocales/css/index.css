@@ -1,0 +1,71 @@
+#a {
+    color: brown
+}
+
+#e {
+    color: blue
+}
+
+#i {
+    color: green
+}
+
+#o {
+    color: red
+}
+
+#u {
+    color: purple
+}
+
+body {
+    font-family: Vedana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+    text-align: center;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.borde,
+.instrucciones {
+    margin: auto;
+}
+
+.borde {
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+li {
+    margin-right: 10%;
+    margin-left: 15%;
+}
+
+footer {
+    text-align: center;
+    margin: auto;
+}
+
+input[type='button'] {
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    background-color: white;
+    color: black;
+    border: 2px solid blue;
+}
+
+input[type='button']:hover {
+    background-color: rgba(78, 92, 136, 0.6);
+    color: white;
+}

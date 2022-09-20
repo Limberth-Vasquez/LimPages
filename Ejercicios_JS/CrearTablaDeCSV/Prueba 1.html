@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+            tr:nth-child(even) {background: #FEFEFE}
+            tr:nth-child(odd) {background: #B7B7B7}
+            tr:first-child {background: #3B3BCE; color: white}
+        </style>
+    </head>
+    <body>
+        <title>Prueba 1</title>        
+        <script type="text/javascript">
+            function printTextAreaTable(){
+                document.getElementById("demoTable").innerHTML = ""
+                let table = document.getElementById("demoTable");
+                table.style.border = '1px solid black';
+                let input = document.getElementById("csvContainer").value.replace(/\n\r?/g, '+');;
+                let csv = input.split("+");
+                for (let row of csv) {
+                    let tr = table.insertRow();
+                    for (let col of row.split(",")) {
+                        let td = tr.insertCell();
+                        td.innerHTML = col;
+                    }
+                }
+            }
+        </script>
+        <h1>Prueba 1</h1>
+        <p>Escriba en Javascript/Html/Css un programa que tome valores separados por coma, los convierta a una tabla y los despligue</p>
+        <p>La tabla debe tomar el primer valor como titulo con un color especifico, y luego las filas pares e impares deben tener un fondo distinto.</p>
+        <p>Por ejemplo:</p>
+        <p>Escribir valores separados por comas en la siguiente area</p>
+        <textarea id="csvContainer"></textarea>
+        <br/>
+        <button type="button"
+            onclick="printTextAreaTable()">
+            Oprimir para crear la tabla.
+        </button>
+        <p id="demo"></p>
+        <table id="demoTable"></table>
+    </body>
+</html>

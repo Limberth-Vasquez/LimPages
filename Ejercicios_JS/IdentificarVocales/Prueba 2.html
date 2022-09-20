@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>            
+            #a {color: brown}
+            #e {color: blue}
+            #i {color: green}
+            #o {color: red}
+            #u {color: purple}
+        </style>
+    </head>
+    <body>
+        <title>Prueba 2</title>        
+        <script type="text/javascript">
+            function printTextColors(){                
+                let a = 0;
+                let e = 0;
+                let i = 0;
+                let o = 0;
+                let u = 0;
+                let output = "";
+                let input = document.getElementById("textContainer").value;
+                for(c in input)
+                {
+                    switch(input[c])
+                    {
+                        case 'a':
+                            output += "<span id='a'>a</span>";
+                            a++;
+                            break;
+                        case 'e':
+                            output += "<span id='e'>e</span>";
+                            e++;
+                            break;
+                        case 'i':
+                            output += "<span id='i'>i</span>";
+                            i++;
+                            break;
+                        case 'o':
+                            output += "<span id='o'>o</span>";
+                            o++;
+                            break;
+                        case 'u':
+                            output += "<span id='u'>u</span>";
+                            u++;
+                            break;
+                        default:
+                            output += input[c];                            
+                    }
+                    
+                }
+                output += "<br/>A = " + a + "<br/>E = " + e + "<br/>I = " + i + "<br/>O = " + o + "<br/>U = " + u;  
+                document.getElementById("demo").innerHTML = output;
+            }
+        </script>
+        <h1>Prueba 2</h1>
+        <p>Escriba en Javascript/Html/Css un programa que tome el texto de un text area y cuente las vocales e indique cuantas veces se repite cada vocal</p>
+        <p>El script debe indicar la cuenta de cada vocal, la cuenta total de vocales y desplegar las vocales con un color distinto.</p>
+        <p>Por ejemplo:</p>
+        <p>Escribir texto en la siguiente area</p>
+        <textarea id="textContainer"></textarea>
+        <br/>
+        <button type="button"
+            onclick="printTextColors()">
+            Oprimir para mostrar el texto.
+        </button>
+        <p id="demo"></p>
+    </body>
+</html>

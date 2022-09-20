@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificando Vocales</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="instrucciones">
+        <h3>Instrucciones para realizar el ejercicio 2</h3>
+        <ol>
+            <li> Escriba en <strong>Javascript/Html/Css</strong> un programa que <strong>tome el texto de un text area y
+                    cuente las vocales e indique cuantas veces se repite cada vocal</strong>
+            </li>
+            <li> El script debe indicar <strong>la cuenta de cada vocal, la cuenta total de vocales y desplegar las
+                    vocales con un color distinto.</strong>
+            </li>
+        </ol>
+
+    </div>
+    <div class="borde">
+
+        <p>Por ejemplo:</p>
+        <p>Escribir texto en la siguiente area</p>
+        <textarea id="textContainer" placeholder="Hola Mundo!" rows="4" cols="50"></textarea>
+        <br />
+        <input type="button" onclick="printTextColors()" value="Oprimir para mostrar el texto." />
+        <h2 id="demo"></h2>
+    </div>
+
+    <footer class="footer-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+                        <p id="copyright">Copyright © All Right Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Tabla de un CSV</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <body>
+        <div class="instrucciones">
+            <h3>Instrucciones para realizar el ejercicio 1</h3>
+            <ol>
+                <li> Escriba en <strong>Javascript/Html/Css</strong> un programa que <strong>tome valores separados por coma</strong>, los convierta a una
+                    tabla y los despligue</li>
+                <li> La tabla debe tomar el <strong>primer valor como titulo con un color especifico</strong>, y luego las <strong>filas pares e
+                    impares deben tener un fondo distinto.</strong> 
+                </li>
+            </ol>
+
+        </div>
+        <div class="borde">
+            <p>Por ejemplo:</p>
+            <p>Escriba valores separados por comas en la siguiente area</p>
+            <textarea id="csvContainer" placeholder="Dios,Poder,Arma,Estrategia" rows="4" cols="50"></textarea>
+            <br />
+            <input type="button" value="Oprimir para crear la tabla." onclick="printTextAreaTable()" />
+            <p id="demo"></p>
+            <table id="demoTable"></table>
+        </div>
+        <footer class="footer-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+                            <p id="copyright">Copyright © All Right Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</body>
+
+</html>
