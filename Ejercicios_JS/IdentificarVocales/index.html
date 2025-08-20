@@ -1,50 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identificando Vocales</title>
+    <title>Identificador de Vocales - Análisis de Texto</title>
+    <meta name="description" content="Herramienta para identificar y contar vocales en texto con visualización colorida">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="instrucciones">
-        <h3>Instrucciones para realizar el ejercicio 2</h3>
-        <ol>
-            <li> Escriba en <strong>Javascript/Html/Css</strong> un programa que <strong>tome el texto de un text area y
-                    cuente las vocales e indique cuantas veces se repite cada vocal</strong>
-            </li>
-            <li> El script debe indicar <strong>la cuenta de cada vocal, la cuenta total de vocales y desplegar las
-                    vocales con un color distinto.</strong>
-            </li>
-        </ol>
-
-    </div>
-    <div class="borde">
-
-        <p>Por ejemplo:</p>
-        <p>Escribir texto en la siguiente area</p>
-        <textarea id="textContainer" placeholder="Hola Mundo!" rows="4" cols="50"></textarea>
-        <br />
-        <input type="button" onclick="printTextColors()" value="Oprimir para mostrar el texto." />
-        <h2 id="demo"></h2>
-    </div>
-
-    <footer class="footer-area section-padding">
+    <!-- Header -->
+    <header class="main-header">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
-                        <p id="copyright">Copyright © All Right Reserved</p>
+            <div class="header-content">
+                <h1 class="main-title">
+                    <i class="fas fa-spell-check"></i>
+                    Identificador de Vocales
+                </h1>
+                <p class="subtitle">Análisis inteligente de texto con visualización colorida</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Instructions Section -->
+            <section class="instrucciones instructions-section">
+                <div class="instructions-card">
+                    <div class="card-header">
+                        <h2 class="section-title">
+                            <i class="fas fa-list-ol"></i>
+                            Instrucciones del Ejercicio
+                        </h2>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="instructions-grid">
+                            <div class="instruction-item">
+                                <div class="instruction-number">1</div>
+                                <div class="instruction-content">
+                                    <h4>Objetivo Principal</h4>
+                                    <p>Escriba en <strong>JavaScript/HTML/CSS</strong> un programa que <strong>tome el texto de un textarea y cuente las vocales e indique cuántas veces se repite cada vocal</strong></p>
+                                </div>
+                            </div>
+                            
+                            <div class="instruction-item">
+                                <div class="instruction-number">2</div>
+                                <div class="instruction-content">
+                                    <h4>Funcionalidades Requeridas</h4>
+                                    <p>El script debe indicar <strong>la cuenta de cada vocal, la cuenta total de vocales y desplegar las vocales con un color distinto.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Vowel Legend -->
+                        <div class="vowel-legend">
+                            <h4>Código de Colores para Vocales:</h4>
+                            <div class="legend-grid">
+                                <div class="legend-item">
+                                    <span id="a" class="vowel-sample">A</span>
+                                    <span class="vowel-name">A - Marrón</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span id="e" class="vowel-sample">E</span>
+                                    <span class="vowel-name">E - Azul</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span id="i" class="vowel-sample">I</span>
+                                    <span class="vowel-name">I - Verde</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span id="o" class="vowel-sample">O</span>
+                                    <span class="vowel-name">O - Rojo</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span id="u" class="vowel-sample">U</span>
+                                    <span class="vowel-name">U - Púrpura</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- Analyzer Section -->
+            <section class="borde analyzer-section">
+                <div class="analyzer-card">
+                    <div class="card-header">
+                        <h2 class="section-title">
+                            <i class="fas fa-text-width"></i>
+                            Analizador de Texto
+                        </h2>
+                        <p class="section-description">Ingrese su texto para analizar las vocales</p>
+                    </div>
+
+                    <div class="card-body">
+                        <!-- Example Section -->
+                        <div class="example-section">
+                            <div class="example-header">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Ejemplo de uso:</span>
+                            </div>
+                            <p class="example-text">Escriba texto en el área siguiente y presione el botón para analizarlo</p>
+                        </div>
+
+                        <!-- Input Section -->
+                        <div class="input-section">
+                            <label for="textContainer" class="textarea-label">
+                                <i class="fas fa-edit"></i>
+                                Área de Texto
+                            </label>
+                            <div class="textarea-wrapper">
+                                <textarea id="textContainer" 
+                                          class="text-input"
+                                          placeholder="¡Hola Mundo! Escribe aquí tu texto para analizar las vocales..."
+                                          rows="6"></textarea>
+                                <div class="textarea-info">
+                                    <span id="charCount" class="char-counter">0 caracteres</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Section -->
+                        <div class="action-section">
+                            <button type="button" 
+                                    class="btn btn-primary analyze-btn"
+                                    onclick="printTextColors()">
+                                <i class="fas fa-search"></i>
+                                <span>Analizar Texto</span>
+                                <div class="btn-effect"></div>
+                            </button>
+                        </div>
+
+                        <!-- Results Section -->
+                        <div class="results-section">
+                            <div class="results-header">
+                                <i class="fas fa-chart-bar"></i>
+                                <h3>Resultados del Análisis</h3>
+                            </div>
+                            <div id="demo" class="results-content">
+                                <div class="empty-state">
+                                    <i class="fas fa-inbox"></i>
+                                    <p>Los resultados aparecerán aquí después del análisis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Statistics Section -->
+            <section class="stats-section" id="statsSection" style="display: none;">
+                <div class="stats-card">
+                    <div class="card-header">
+                        <h3 class="section-title">
+                            <i class="fas fa-chart-pie"></i>
+                            Estadísticas Detalladas
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="stats-grid" id="statsGrid">
+                            <!-- Stats will be populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Identificador de Vocales</h3>
+                    <p class="footer-description">Herramienta educativa para análisis de texto</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2024 Todos los derechos reservados
+                </p>
             </div>
         </div>
     </footer>
+
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/index.js"></script>
+    
+    <!-- Character Counter Script -->
+    <script>
+        document.getElementById('textContainer').addEventListener('input', function() {
+            const charCount = this.value.length;
+            document.getElementById('charCount').textContent = `${charCount} caracteres`;
+        });
+    </script>
 </body>
-
 </html>

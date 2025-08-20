@@ -1,59 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 2 Cuntas Bancarias</title>
+    <title>Ejercicio 2 - Sistema de Cuentas Bancarias</title>
+    <meta name="description" content="Sistema interactivo de gestión de cuentas bancarias con transferencias">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <h1>Cuentas Bancarias</h1>
-    <h2>Bienvenido <a href="./ctasBancarias.pdf" target="_blank"> ver instrucciones</a></h2>
-    <div class="contenedor">
-
-        <h2>Cuenta principal (A)</h2>
-        <div>
-            <label for="txtSaldoFavorA">Saldo a favor:</label>
-            <output id="txtSaldoFavorA"></output>
-        </div>
-        <br>
-        <div>
-            <label for="">Monto a transferir: </label>
-            <input type="number" min="0" id="txtTransaccionA" placeholder="Indique monto a transferir">
-            <input type="button" value="Transferir" id="btnTransferirA">
-        </div>
-    </div>
-    <div class="contenedor">
-
-        <h2>Cuenta principal (B)</h2>
-        <div>
-            <label for="txtSaldoFavorB">Saldo a favor:</label>
-            <output id="txtSaldoFavorB"></output>
-        </div>
-        <br>
-        <div>
-            <label for="">Monto a transferir: </label>
-            <input type="number" min="0" id="txtTransaccionB" placeholder="Indique monto a transferir">
-            <input type="button" value="Transferir" id="btnTransferirB">
-        </div>
-    </div>
-    
-    <footer class="footer-area section-padding">
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
-                <p id="copyright">Copyright © All Right Reserved | Limberth Vasquez Quesada</p>
-              </div>
+            <div class="header-content">
+                <div class="title-section">
+                    <h1 class="main-title">
+                        <i class="fas fa-university"></i>
+                        Ejercicio 2: Sistema de Cuentas Bancarias
+                    </h1>
+                    <p class="subtitle">Gestión de transferencias entre cuentas</p>
+                </div>
+                
+                <div class="instructions-link">
+                    <a href="./ctasBancarias.pdf" 
+                       target="_blank" 
+                       class="btn btn-outline"
+                       rel="noopener noreferrer">
+                        <i class="fas fa-file-pdf"></i>
+                        Ver Instrucciones
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
-      </footer>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Transaction Summary -->
+            <div class="summary-section">
+                <h2 class="summary-title">
+                    <i class="fas fa-chart-line"></i>
+                    Resumen de Cuentas
+                </h2>
+            </div>
+
+            <!-- Accounts Section -->
+            <div class="accounts-section">
+                <!-- Cuenta A -->
+                <div class="account-card account-a">
+                    <div class="card-header">
+                        <div class="account-info">
+                            <div class="account-icon">
+                                <i class="fas fa-piggy-bank"></i>
+                            </div>
+                            <div class="account-details">
+                                <h3 class="account-title">Cuenta Principal A</h3>
+                                <span class="account-number">**** **** **** 1234</span>
+                            </div>
+                        </div>
+                        <div class="account-status active">
+                            <i class="fas fa-circle"></i>
+                            Activa
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="balance-section">
+                            <label class="balance-label">Saldo Disponible</label>
+                            <div class="balance-display">
+                                <span class="currency">₡</span>
+                                <output id="txtSaldoFavorA" class="balance-amount">500,000.00</output>
+                            </div>
+                        </div>
+
+                        <div class="transaction-section">
+                            <h4 class="section-title">
+                                <i class="fas fa-paper-plane"></i>
+                                Transferir a Cuenta B
+                            </h4>
+                            
+                            <div class="input-group">
+                                <label for="txtTransaccionA" class="input-label">
+                                    Monto a transferir
+                                </label>
+                                <div class="input-wrapper">
+                                    <span class="input-prefix">₡</span>
+                                    <input type="number" 
+                                           id="txtTransaccionA" 
+                                           class="amount-input"
+                                           placeholder="0.00"
+                                           min="0"
+                                           step="0.01"
+                                           max="500000">
+                                </div>
+                                <div class="input-feedback" id="feedbackA"></div>
+                            </div>
+
+                            <div class="quick-amounts">
+                                <span class="quick-label">Montos rápidos:</span>
+                                <div class="quick-buttons">
+                                    <button class="quick-btn" data-account="A" data-amount="10000" onclick="document.getElementById('txtTransaccionA').value = 10000">₡10,000</button>
+                                    <button class="quick-btn" data-account="A" data-amount="50000" onclick="document.getElementById('txtTransaccionA').value = 50000">₡50,000</button>
+                                    <button class="quick-btn" data-account="A" data-amount="100000" onclick="document.getElementById('txtTransaccionA').value = 100000">₡100,000</button>
+                                </div>
+                            </div>
+
+                            <button id="btnTransferirA" class="btn btn-primary transfer-btn">
+                                <i class="fas fa-arrow-right"></i>
+                                <span>Transferir</span>
+                                <div class="btn-loader" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cuenta B -->
+                <div class="account-card account-b">
+                    <div class="card-header">
+                        <div class="account-info">
+                            <div class="account-icon">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <div class="account-details">
+                                <h3 class="account-title">Cuenta Principal B</h3>
+                                <span class="account-number">**** **** **** 5678</span>
+                            </div>
+                        </div>
+                        <div class="account-status active">
+                            <i class="fas fa-circle"></i>
+                            Activa
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="balance-section">
+                            <label class="balance-label">Saldo Disponible</label>
+                            <div class="balance-display">
+                                <span class="currency">₡</span>
+                                <output id="txtSaldoFavorB" class="balance-amount">500,000.00</output>
+                            </div>
+                        </div>
+
+                        <div class="transaction-section">
+                            <h4 class="section-title">
+                                <i class="fas fa-paper-plane"></i>
+                                Transferir a Cuenta A
+                            </h4>
+                            
+                            <div class="input-group">
+                                <label for="txtTransaccionB" class="input-label">
+                                    Monto a transferir
+                                </label>
+                                <div class="input-wrapper">
+                                    <span class="input-prefix">₡</span>
+                                    <input type="number" 
+                                           id="txtTransaccionB" 
+                                           class="amount-input"
+                                           placeholder="0.00"
+                                           min="0"
+                                           step="0.01"
+                                           max="500000">
+                                </div>
+                                <div class="input-feedback" id="feedbackB"></div>
+                            </div>
+
+                            <div class="quick-amounts">
+                                <span class="quick-label">Montos rápidos:</span>
+                                <div class="quick-buttons">
+                                    <button class="quick-btn" data-account="B" data-amount="10000" onclick="document.getElementById('txtTransaccionB').value = 10000">₡10,000</button>
+                                    <button class="quick-btn" data-account="B" data-amount="50000" onclick="document.getElementById('txtTransaccionB').value = 50000">₡50,000</button>
+                                    <button class="quick-btn" data-account="B" data-amount="100000" onclick="document.getElementById('txtTransaccionB').value = 100000">₡100,000</button>
+                                </div>
+                            </div>
+
+                            <button id="btnTransferirB" class="btn btn-primary transfer-btn">
+                                <i class="fas fa-arrow-left"></i>
+                                <span>Transferir</span>
+                                <div class="btn-loader" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Sistema Bancario Demo</h3>
+                    <p class="footer-description">Ejercicio educativo de JavaScript</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright" id="copyright">
+                    © 2024 Limberth Vasquez Quesada. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div id="toastContainer" class="toast-container"></div>
 
     <script src="./js/index.js"></script>
     <script src="../index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
 </body>
 </html>

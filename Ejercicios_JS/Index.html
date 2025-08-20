@@ -1,49 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios</title>
+    <title>Portfolio de Ejercicios JavaScript</title>
+    <meta name="description"
+        content="Colección de ejercicios interactivos de JavaScript desarrollados por Limberth Vasquez">
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-    <div>
-        <h3>Seleccione el ejercicio que desea realizar</h3>
-        <a href="./Bombilla/Indicaciones.html" target="_blank">Ejercicio 1 Bombilla</a>
-        <a href="./ctasBancarias/index.html" target="_blank">Ejercicio 2 Cuentas Bancarias</a>
-        <a href="./fabrica de botellas/InsertDias.html" target="_blank">Ejercicio 3 Fabrica de botellas</a>
-    </div>
-    
-    <footer class="footer-area section-padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
-                <!-- <ul class="social-icon">
-                  <li>
-                    <a class="facebook" href="https://www.facebook.com/limberth.vasquezquesada/"><i class="icon-social-facebook"></i></a>
-                  </li> -->
-                  <!-- <li>
-                    <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
-                  </li> -->
-                  <!-- <li>
-                    <a class="instagram" href="https://www.linkedin.com/in/limberth-v%C3%A1squez-quesada-490361150/"><i class="icon-social-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a class="instagram" href="mailto:limberthvaquez@gmail.com"><i class="icon-social-google"></i></a>
-                  </li>
-                </ul> -->
-                <p id="copyright">Copyright © All Right Reserved | Limberth Vasquez Quesada</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
 
-      <script src="./index.js"></script>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">
+                <i class="fas fa-code"></i>
+                Portafolio de Ejercicios JavaScript
+            </h1>
+            <p class="subtitle">Explora una colección de ejercicios interactivos</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <section class="exercises-section">
+                <h2 class="section-title">Selecciona un Ejercicio</h2>
+                <p class="section-description">
+                    Cada ejercicio demuestra diferentes conceptos de JavaScript y programación web
+                </p>
+
+                <div class="exercises-grid">
+                    <!-- Ejercicio 1 -->
+                    <div class="exercise-card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Bombilla Interactiva</h3>
+                            <p class="card-description">
+                                Aprende a manipular atributos HTML con JavaScript.
+                                Controla el encendido y apagado de una bombilla.
+                            </p>
+                            <div class="card-tags">
+                                <span class="tag">DOM</span>
+                                <span class="tag">Eventos</span>
+                                <span class="tag">Básico</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="./Bombilla/Indicaciones.html" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-play"></i> Comenzar
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Ejercicio 2 -->
+                    <div class="exercise-card">
+                        <div class="card-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Cuentas Bancarias</h3>
+                            <p class="card-description">
+                                Sistema de gestión bancaria con operaciones de depósito,
+                                retiro y consulta de saldos.
+                            </p>
+                            <div class="card-tags">
+                                <span class="tag">POO</span>
+                                <span class="tag">Formularios</span>
+                                <span class="tag">Intermedio</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="./ctasBancarias/index.html" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-play"></i> Comenzar
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Ejercicio 3 -->
+                    <div class="exercise-card">
+                        <div class="card-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Fábrica de Botellas</h3>
+                            <p class="card-description">
+                                Simulador de producción industrial con cálculos
+                                de capacidad y gestión de días laborales.
+                            </p>
+                            <div class="card-tags">
+                                <span class="tag">Algoritmos</span>
+                                <span class="tag">Cálculos</span>
+                                <span class="tag">Avanzado</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="./fabrica de botellas/InsertDias.html" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-play"></i> Comenzar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="section-title">Ejercicios Avanzados JavaScript</h2>
+                <p class="section-description">
+                    Ejercicios especializados en manipulación de datos y análisis de texto
+                </p>
+
+
+                <div class="exercises-grid">
+                    <!-- Ejercicio 4 -->
+                    <div class="exercise-card">
+                        <div class="card-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Generador de Tablas CSV</h3>
+                            <p class="card-description">
+                                Convierte datos CSV en tablas HTML dinámicas. Aprende a procesar archivos, manipular
+                                strings y generar contenido dinámico.
+                            </p>
+                            <div class="card-features">
+                                <div class="feature">
+                                    <i class="fas fa-file-csv"></i>
+                                    <span>Procesamiento CSV</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-code"></i>
+                                    <span>DOM Dinámico</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-table"></i>
+                                    <span>Tablas HTML</span>
+                                </div>
+                            </div>
+                            <div class="card-tags">
+                                <span class="tag parsing">Parsing</span>
+                                <span class="tag dom">DOM</span>
+                                <span class="tag data">Datos</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="./CrearTablaDeCSV/index.html" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-play"></i> Comenzar
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Ejercicio 5 -->
+                    <div class="exercise-card">
+                        <div class="card-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Identificador de Vocales</h3>
+                            <p class="card-description">
+                                Analiza texto y encuentra patrones de vocales. Perfecto para
+                                entender manipulación de strings y expresiones regulares.
+                            </p>
+                            <div class="card-features">
+                                <div class="feature">
+                                    <i class="fas fa-search"></i>
+                                    <span>Análisis de Texto</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-font"></i>
+                                    <span>Manipulación Strings</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-chart-bar"></i>
+                                    <span>Estadísticas</span>
+                                </div>
+                            </div>
+
+                            <div class="card-tags">
+                                <span class="tag strings">Strings</span>
+                                <span class="tag regex">RegEx</span>
+                                <span class="tag analysis">Análisis</span>
+                            </div>
+                        </div>
+                        <div class="card-actions">
+                            <a href="./IdentificarVocales/index.html" class="btn btn-primary" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="fas fa-play"></i> Comenzar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Estadísticas -->
+                <div class="stats-section">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Ejercicios</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">JavaScript</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">∞</div>
+                            <div class="stat-label">Aprendizaje</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección de Aprendizaje -->
+                <br>
+                <div class="learning-section">
+                    <h3 class="learning-title">¿Qué Aprenderás?</h3>
+                    <div class="learning-grid">
+                        <div class="learning-item">
+                            <div class="learning-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4>Manipulación de Datos</h4>
+                            <p>Procesamiento de archivos CSV y estructuras de datos complejas</p>
+                        </div>
+                        <div class="learning-item">
+                            <div class="learning-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <h4>Algoritmos de Texto</h4>
+                            <p>Búsqueda de patrones y análisis de contenido textual</p>
+                        </div>
+                        <div class="learning-item">
+                            <div class="learning-icon">
+                                <i class="fas fa-magic"></i>
+                            </div>
+                            <h4>DOM Dinámico</h4>
+                            <p>Generación y manipulación de elementos HTML en tiempo real</p>
+                        </div>
+                        <div class="learning-item">
+                            <div class="learning-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Análisis de Resultados</h4>
+                            <p>Interpretación y visualización de datos procesados</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Limberth Vásquez Quesada</h3>
+                    <p class="footer-description">Software, Docencia y Música</p>
+                    <a class="footer-description" href="./calcIteracionesProyectos/index.html">Iteraciones</a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/limberth.vasquezquesada/" class="social-link facebook"
+                        target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/limberth-v%C3%A1squez-490361150/"
+                        class="social-link linkedin" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:limberthvaquez@gmail.com" class="social-link email" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright" id="copyright">
+                    © 2024 Limberth Vasquez Quesada. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
 </body>
+
 </html>

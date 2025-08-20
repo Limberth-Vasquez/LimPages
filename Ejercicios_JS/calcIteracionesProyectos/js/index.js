@@ -46,9 +46,10 @@ function CalcularIteracion() {
     }
     let SumaProfes = profe1Val + profe2Val;
     let PromProfes = (SumaProfes / 2);
-    var resultado = ((PromProfes * porcentajeVal) / 100).toFixed(4);
+    var resultadoPorcentual = ((PromProfes * porcentajeVal) / 100).toFixed(4);
+    var resultadoNota = (resultadoPorcentual * 100) / porcentajeVal;
     let respuesta = 'Resultado de la iteración para el grupo \n' +
-        grupo + ' es: \n' + resultado;
+        grupo + ' es: \n' + resultadoPorcentual + ', equivale en nota a: ' + resultadoNota;
     document.getElementById('ResultadoIteracion').innerHTML = respuesta;
 
 }

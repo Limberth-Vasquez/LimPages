@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Calificaciones - Quices e Iteraciones</title>
+    <meta name="description" content="Sistema para calcular calificaciones de quices y iteraciones académicas">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <h1 class="main-title">
+                <i class="fas fa-calculator"></i>
+                Sistema de Calificaciones
+            </h1>
+            <p class="subtitle">Cálculo de quices e iteraciones académicas</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Sección de Quiz -->
+        <section class="centerDiv quiz-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-clipboard-question"></i>
+                    Calificación de Quiz
+                </h2>
+                <p class="section-description">Calcula automáticamente el resultado en base al 2%</p>
+            </div>
+
+            <div class="form-container">
+                <div class="input-group">
+                    <label for="txtCalificacionMoodle" class="input-label">
+                        <i class="fas fa-percent"></i>
+                        Calificación del Quiz
+                    </label>
+                    <div class="input-wrapper">
+                        <input type="number" 
+                               id="txtCalificacionMoodle" 
+                               class="form-input"
+                               placeholder="Ingrese la calificación (0-100)"
+                               min="0" 
+                               max="100"
+                               step="0.01"
+                               onkeyup="CalcularAl2Porciento()">
+                        <span class="input-suffix">%</span>
+                    </div>
+                </div>
+
+                <div class="result-container quiz-result">
+                    <div class="result-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="result-content">
+                        <h3 id="Resultado" class="result-text">
+                            Resultado en base a 2% es: <span class="result-value">-</span>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Iteración -->
+        <section class="centerDiv iteration-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-users"></i>
+                    Calificación de Iteración
+                </h2>
+                <p class="section-description">Evalúa iteraciones con calificaciones de múltiples profesores</p>
+            </div>
+
+            <div class="form-container">
+                <!-- Información del grupo -->
+                <div class="centerDiv2 group-info">
+                    <div class="input-group">
+                        <label for="txtGrupo" class="input-label">
+                            <i class="fas fa-users"></i>
+                            Grupo
+                        </label>
+                        <div class="input-wrapper">
+                            <input type="text" 
+                                   id="txtGrupo" 
+                                   class="form-input"
+                                   placeholder="Ej: Grupo A, Equipo 1, etc.">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid de calificaciones -->
+                <div class="grades-grid">
+                    <div class="input-group">
+                        <label for="txtPorcentaje" class="input-label required">
+                            <i class="fas fa-percentage"></i>
+                            Porcentaje
+                        </label>
+                        <div class="input-wrapper">
+                            <input type="number" 
+                                   id="txtPorcentaje" 
+                                   class="form-input"
+                                   placeholder="Porcentaje de evaluación"
+                                   min="0" 
+                                   max="100"
+                                   step="0.01">
+                            <span class="input-suffix">%</span>
+                        </div>
+                        <small class="input-help">Campo obligatorio</small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="txtCalificacionIteracionProfe1" class="input-label required">
+                            <i class="fas fa-user-tie"></i>
+                            Calificación Profesor 1
+                        </label>
+                        <div class="input-wrapper">
+                            <input type="number" 
+                                   id="txtCalificacionIteracionProfe1" 
+                                   class="form-input"
+                                   placeholder="Calificación del primer profesor"
+                                   min="0" 
+                                   max="100"
+                                   step="0.01">
+                            <span class="input-suffix">pts</span>
+                        </div>
+                        <small class="input-help">Campo obligatorio</small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="txtCalificacionIteracionProfe2" class="input-label required">
+                            <i class="fas fa-user-graduate"></i>
+                            Calificación Profesor 2
+                        </label>
+                        <div class="input-wrapper">
+                            <input type="number" 
+                                   id="txtCalificacionIteracionProfe2" 
+                                   class="form-input"
+                                   placeholder="Calificación del segundo profesor"
+                                   min="0" 
+                                   max="100"
+                                   step="0.01">
+                            <span class="input-suffix">pts</span>
+                        </div>
+                        <small class="input-help">Campo obligatorio</small>
+                    </div>
+                </div>
+
+                <!-- Resultado de iteración -->
+                <div class="result-container iteration-result">
+                    <div class="result-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="result-content">
+                        <h3 id="ResultadoIteracion" class="result-text">
+                            Resultado de la iteración es: <span class="result-value">-</span>
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- Botón de cálculo -->
+                <div class="action-section">
+                    <button type="button" 
+                            class="btn btn-primary"
+                            onclick="CalcularIteracion()">
+                        <i class="fas fa-calculator"></i>
+                        <span>Calcular Iteración</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Información adicional -->
+        <section class="info-section">
+            <div class="info-card">
+                <div class="info-header">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>Información del Sistema</h3>
+                </div>
+                <div class="info-content">
+                    <div class="info-item">
+                        <strong>Cálculo de Quiz:</strong> Se calcula automáticamente al ingresar la calificación, aplicando el 2% correspondiente.
+                    </div>
+                    <div class="info-item">
+                        <strong>Cálculo de Iteración:</strong> Promedia las calificaciones de ambos profesores y aplica el porcentaje especificado.
+                    </div>
+                    <div class="info-item">
+                        <strong>Campos obligatorios:</strong> Marcados con asterisco (*) deben ser completados para realizar el cálculo.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3 class="footer-title">Sistema de Calificaciones Académicas</h3>
+                <p class="footer-description">Herramienta para el cálculo eficiente de evaluaciones</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright" id="copyright">
+                © 2024 Sistema Académico. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/index.js"></script>
+    <script src="../index.js"></script>
+</body>
+</html>

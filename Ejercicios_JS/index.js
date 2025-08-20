@@ -10,5 +10,5 @@ function getFechaHoy() {
     today = dd + '/' + mm + '/' + yyyy;
 
     let fechaHoy = document.getElementById('copyright');
-    fechaHoy.innerText = 'Copyright © ' + today + ' All Right Reserved | Limberth Vasquez Quesada';
+    fechaHoy.innerHTML = `Copyright © ${today} All Right Reserved | <a href="https://limberth-vasquez.github.io" style="color:white;">Limberth Vásquez Quesada</a>`;
 }
