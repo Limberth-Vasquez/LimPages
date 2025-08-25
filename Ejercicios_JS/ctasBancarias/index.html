@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,10 @@
     <meta name="description" content="Sistema interactivo de gestión de cuentas bancarias con transferencias">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/img/LimberthLogo.ico">
 </head>
+
 <body>
     <!-- Header -->
     <header class="header">
@@ -20,16 +24,18 @@
                     </h1>
                     <p class="subtitle">Gestión de transferencias entre cuentas</p>
                 </div>
-                
+
                 <div class="instructions-link">
-                    <a href="./ctasBancarias.pdf" 
-                       target="_blank" 
-                       class="btn btn-outline"
-                       rel="noopener noreferrer">
+                    <a href="./ctasBancarias.pdf" target="_blank" class="btn btn-outline" rel="noopener noreferrer">
                         <i class="fas fa-file-pdf"></i>
                         Ver Instrucciones
                     </a>
                 </div>
+
+                <h1 class="main-title">
+                    <a href="../index.html" style="color: white; text-decoration: none;"><i
+                            class="fa fa-arrow-left"></i> Volver</a>
+                </h1>
             </div>
         </div>
     </header>
@@ -79,20 +85,15 @@
                                 <i class="fas fa-paper-plane"></i>
                                 Transferir a Cuenta B
                             </h4>
-                            
+
                             <div class="input-group">
                                 <label for="txtTransaccionA" class="input-label">
                                     Monto a transferir
                                 </label>
                                 <div class="input-wrapper">
                                     <span class="input-prefix">₡</span>
-                                    <input type="number" 
-                                           id="txtTransaccionA" 
-                                           class="amount-input"
-                                           placeholder="0.00"
-                                           min="0"
-                                           step="0.01"
-                                           max="500000">
+                                    <input type="number" id="txtTransaccionA" class="amount-input" placeholder="0.00"
+                                        min="0" step="0.01" max="500000">
                                 </div>
                                 <div class="input-feedback" id="feedbackA"></div>
                             </div>
@@ -100,9 +101,12 @@
                             <div class="quick-amounts">
                                 <span class="quick-label">Montos rápidos:</span>
                                 <div class="quick-buttons">
-                                    <button class="quick-btn" data-account="A" data-amount="10000" onclick="document.getElementById('txtTransaccionA').value = 10000">₡10,000</button>
-                                    <button class="quick-btn" data-account="A" data-amount="50000" onclick="document.getElementById('txtTransaccionA').value = 50000">₡50,000</button>
-                                    <button class="quick-btn" data-account="A" data-amount="100000" onclick="document.getElementById('txtTransaccionA').value = 100000">₡100,000</button>
+                                    <button class="quick-btn" data-account="A" data-amount="10000"
+                                        onclick="document.getElementById('txtTransaccionA').value = 10000">₡10,000</button>
+                                    <button class="quick-btn" data-account="A" data-amount="50000"
+                                        onclick="document.getElementById('txtTransaccionA').value = 50000">₡50,000</button>
+                                    <button class="quick-btn" data-account="A" data-amount="100000"
+                                        onclick="document.getElementById('txtTransaccionA').value = 100000">₡100,000</button>
                                 </div>
                             </div>
 
@@ -149,20 +153,15 @@
                                 <i class="fas fa-paper-plane"></i>
                                 Transferir a Cuenta A
                             </h4>
-                            
+
                             <div class="input-group">
                                 <label for="txtTransaccionB" class="input-label">
                                     Monto a transferir
                                 </label>
                                 <div class="input-wrapper">
                                     <span class="input-prefix">₡</span>
-                                    <input type="number" 
-                                           id="txtTransaccionB" 
-                                           class="amount-input"
-                                           placeholder="0.00"
-                                           min="0"
-                                           step="0.01"
-                                           max="500000">
+                                    <input type="number" id="txtTransaccionB" class="amount-input" placeholder="0.00"
+                                        min="0" step="0.01" max="500000">
                                 </div>
                                 <div class="input-feedback" id="feedbackB"></div>
                             </div>
@@ -170,9 +169,12 @@
                             <div class="quick-amounts">
                                 <span class="quick-label">Montos rápidos:</span>
                                 <div class="quick-buttons">
-                                    <button class="quick-btn" data-account="B" data-amount="10000" onclick="document.getElementById('txtTransaccionB').value = 10000">₡10,000</button>
-                                    <button class="quick-btn" data-account="B" data-amount="50000" onclick="document.getElementById('txtTransaccionB').value = 50000">₡50,000</button>
-                                    <button class="quick-btn" data-account="B" data-amount="100000" onclick="document.getElementById('txtTransaccionB').value = 100000">₡100,000</button>
+                                    <button class="quick-btn" data-account="B" data-amount="10000"
+                                        onclick="document.getElementById('txtTransaccionB').value = 10000">₡10,000</button>
+                                    <button class="quick-btn" data-account="B" data-amount="50000"
+                                        onclick="document.getElementById('txtTransaccionB').value = 50000">₡50,000</button>
+                                    <button class="quick-btn" data-account="B" data-amount="100000"
+                                        onclick="document.getElementById('txtTransaccionB').value = 100000">₡100,000</button>
                                 </div>
                             </div>
 
@@ -196,10 +198,29 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
+                    <h3 class="footer-title">Limberth Vásquez Quesada</h3>
+                    <p class="footer-description">Software, Docencia y Música</p>
+                </div>
+
+                <div class="footer-info">
                     <h3 class="footer-title">Sistema Bancario Demo</h3>
                     <p class="footer-description">Ejercicio educativo de JavaScript</p>
                 </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/limberth.vasquezquesada/" class="social-link facebook"
+                        target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/limberth-v%C3%A1squez-490361150/" class="social-link linkedin"
+                        target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:limberthvaquez@gmail.com" class="social-link email" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
+
             <div class="footer-bottom">
                 <p class="copyright" id="copyright">
                     © 2024 Limberth Vasquez Quesada. Todos los derechos reservados.
@@ -215,4 +236,5 @@
     <script src="../index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>

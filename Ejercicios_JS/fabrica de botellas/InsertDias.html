@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="utf-8">
     <title>Ejercicio 3 - Fábrica de Botellas</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/img/LimberthLogo.ico">
 </head>
+
 <body class="dias">
     <section class="sect2">
         <!-- Header mejorado -->
@@ -21,12 +25,13 @@
                         <h2 class="welcome-text">
                             Bienvenido al sistema de control de producción
                         </h2>
-                        <a href="./Fábrica de botellas.pdf" 
-                           target="_blank" 
-                           class="instructions-btn">
+                        <a href="./Fábrica de botellas.pdf" target="_blank" class="instructions-btn">
                             <i class="fas fa-file-pdf"></i>
                             Ver Instrucciones
                         </a>
+                        <h1 class="main-title">
+                            <a href="../index.html" style="color: white; text-decoration: none;"><i class="fa fa-arrow-left"></i> Volver</a>
+                        </h1>
                     </div>
                 </div>
 
@@ -39,11 +44,7 @@
                                 IPF
                             </label>
                             <div class="input-wrapper">
-                                <input type="number" 
-                                       id="IPF" 
-                                       class="form-input" 
-                                       placeholder="Ingrese el IPF" 
-                                       min="1">
+                                <input type="number" id="IPF" class="form-input" placeholder="Ingrese el IPF" min="1">
                                 <span class="required">*</span>
                             </div>
                             <small class="form-help">Índice de Producción por Fábrica</small>
@@ -55,11 +56,7 @@
                                 IPP
                             </label>
                             <div class="input-wrapper">
-                                <input type="number" 
-                                       id="IPP" 
-                                       class="form-input" 
-                                       placeholder="Ingrese IPP" 
-                                       min="1">
+                                <input type="number" id="IPP" class="form-input" placeholder="Ingrese IPP" min="1">
                                 <span class="required">*</span>
                             </div>
                             <small class="form-help">Índice de Producción por Planta</small>
@@ -71,11 +68,8 @@
                                 Plantas
                             </label>
                             <div class="input-wrapper">
-                                <input type="number" 
-                                       id="numPlanta" 
-                                       class="form-input" 
-                                       placeholder="Cantidad plantas" 
-                                       min="1">
+                                <input type="number" id="numPlanta" class="form-input" placeholder="Cantidad plantas"
+                                    min="1">
                                 <span class="required">*</span>
                             </div>
                             <small class="form-help">Número total de plantas</small>
@@ -113,10 +107,8 @@
                                 Número de Planta
                             </label>
                             <div class="input-wrapper">
-                                <input type="number" 
-                                       id="numPlantas" 
-                                       class="form-input" 
-                                       placeholder="Ingrese número de planta">
+                                <input type="number" id="numPlantas" class="form-input"
+                                    placeholder="Ingrese número de planta">
                                 <span class="required">*</span>
                             </div>
                         </div>
@@ -130,10 +122,8 @@
                                         Día 1
                                     </label>
                                     <div class="input-wrapper">
-                                        <input type="number" 
-                                               id="day1" 
-                                               class="day-input" 
-                                               placeholder="Cantidad botellas del día 1">
+                                        <input type="number" id="day1" class="day-input"
+                                            placeholder="Cantidad botellas del día 1">
                                         <span class="required">*</span>
                                     </div>
                                 </div>
@@ -144,10 +134,8 @@
                                         Día 2
                                     </label>
                                     <div class="input-wrapper">
-                                        <input type="number" 
-                                               id="day2" 
-                                               class="day-input" 
-                                               placeholder="Cantidad botellas del día 2">
+                                        <input type="number" id="day2" class="day-input"
+                                            placeholder="Cantidad botellas del día 2">
                                         <span class="required">*</span>
                                     </div>
                                 </div>
@@ -158,10 +146,8 @@
                                         Día 3
                                     </label>
                                     <div class="input-wrapper">
-                                        <input type="number" 
-                                               id="day3" 
-                                               class="day-input" 
-                                               placeholder="Cantidad botellas del día 3">
+                                        <input type="number" id="day3" class="day-input"
+                                            placeholder="Cantidad botellas del día 3">
                                         <span class="required">*</span>
                                     </div>
                                 </div>
@@ -172,10 +158,8 @@
                                         Día 4
                                     </label>
                                     <div class="input-wrapper">
-                                        <input type="number" 
-                                               id="day4" 
-                                               class="day-input" 
-                                               placeholder="Cantidad botellas del día 4">
+                                        <input type="number" id="day4" class="day-input"
+                                            placeholder="Cantidad botellas del día 4">
                                         <span class="required">*</span>
                                     </div>
                                 </div>
@@ -186,10 +170,8 @@
                                         Día 5
                                     </label>
                                     <div class="input-wrapper">
-                                        <input type="number" 
-                                               id="day5" 
-                                               class="day-input" 
-                                               placeholder="Cantidad botellas del día 5">
+                                        <input type="number" id="day5" class="day-input"
+                                            placeholder="Cantidad botellas del día 5">
                                         <span class="required">*</span>
                                     </div>
                                 </div>
@@ -200,10 +182,8 @@
                                         Día 6
                                     </label>
                                     <div class="input-wrapper">
-                                        <input type="number" 
-                                               id="day6" 
-                                               class="day-input" 
-                                               placeholder="Cantidad botellas del día 6">
+                                        <input type="number" id="day6" class="day-input"
+                                            placeholder="Cantidad botellas del día 6">
                                         <span class="required">*</span>
                                     </div>
                                 </div>
@@ -347,18 +327,42 @@
             </div>
         </section>
 
+
+
         <!-- Footer -->
-        <footer class="main-footer">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3 class="footer-title">Sistema de Fábrica de Botellas</h3>
-                    <p class="footer-description">Control de producción industrial</p>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h3 class="footer-title">Limberth Vásquez Quesada</h3>
+                        <p class="footer-description">Software, Docencia y Música</p>
+                    </div>
+
+                    <div class="footer-info">
+                        <h3 class="footer-title">Sistema de Fábrica de Botellas</h3>
+                        <p class="footer-description">Control de producción industrial</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/limberth.vasquezquesada/" class="social-link facebook"
+                            target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/limberth-v%C3%A1squez-490361150/"
+                            class="social-link linkedin" target="_blank" rel="noopener noreferrer"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:limberthvaquez@gmail.com" class="social-link email" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p class="copyright" id="copyright">
-                    Copyright © All Right Reserved | Limberth Vasquez Quesada
-                </p>
+
+                <div class="footer-bottom">
+                    <p class="copyright" id="copyright">
+                        © 2024 Limberth Vasquez Quesada. Todos los derechos reservados.
+                    </p>
+                </div>
             </div>
         </footer>
     </section>
@@ -366,4 +370,5 @@
     <script src="js/fabricalogic.js"></script>
     <script src="../index.js"></script>
 </body>
+
 </html>

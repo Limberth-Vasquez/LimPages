@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Identificador de Vocales - Análisis de Texto</title>
-    <meta name="description" content="Herramienta para identificar y contar vocales en texto con visualización colorida">
+    <meta name="description"
+        content="Herramienta para identificar y contar vocales en texto con visualización colorida">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../../assets/img/LimberthLogo.ico">
 </head>
+
 <body>
     <!-- Header -->
     <header class="main-header">
@@ -19,6 +25,10 @@
                     Identificador de Vocales
                 </h1>
                 <p class="subtitle">Análisis inteligente de texto con visualización colorida</p>
+            
+                <h1 class="main-title">
+                    <a href="../index.html" style="color: white; text-decoration: none;"><i class="fa fa-arrow-left"></i> Volver</a>
+                </h1>
             </div>
         </div>
     </header>
@@ -35,22 +45,25 @@
                             Instrucciones del Ejercicio
                         </h2>
                     </div>
-                    
+
                     <div class="card-body">
                         <div class="instructions-grid">
                             <div class="instruction-item">
                                 <div class="instruction-number">1</div>
                                 <div class="instruction-content">
                                     <h4>Objetivo Principal</h4>
-                                    <p>Escriba en <strong>JavaScript/HTML/CSS</strong> un programa que <strong>tome el texto de un textarea y cuente las vocales e indique cuántas veces se repite cada vocal</strong></p>
+                                    <p>Escriba en <strong>JavaScript/HTML/CSS</strong> un programa que <strong>tome el
+                                            texto de un textarea y cuente las vocales e indique cuántas veces se repite
+                                            cada vocal</strong></p>
                                 </div>
                             </div>
-                            
+
                             <div class="instruction-item">
                                 <div class="instruction-number">2</div>
                                 <div class="instruction-content">
                                     <h4>Funcionalidades Requeridas</h4>
-                                    <p>El script debe indicar <strong>la cuenta de cada vocal, la cuenta total de vocales y desplegar las vocales con un color distinto.</strong></p>
+                                    <p>El script debe indicar <strong>la cuenta de cada vocal, la cuenta total de
+                                            vocales y desplegar las vocales con un color distinto.</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +116,8 @@
                                 <i class="fas fa-lightbulb"></i>
                                 <span>Ejemplo de uso:</span>
                             </div>
-                            <p class="example-text">Escriba texto en el área siguiente y presione el botón para analizarlo</p>
+                            <p class="example-text">Escriba texto en el área siguiente y presione el botón para
+                                analizarlo</p>
                         </div>
 
                         <!-- Input Section -->
@@ -113,10 +127,9 @@
                                 Área de Texto
                             </label>
                             <div class="textarea-wrapper">
-                                <textarea id="textContainer" 
-                                          class="text-input"
-                                          placeholder="¡Hola Mundo! Escribe aquí tu texto para analizar las vocales..."
-                                          rows="6"></textarea>
+                                <textarea id="textContainer" class="text-input"
+                                    placeholder="¡Hola Mundo! Escribe aquí tu texto para analizar las vocales..."
+                                    rows="6"></textarea>
                                 <div class="textarea-info">
                                     <span id="charCount" class="char-counter">0 caracteres</span>
                                 </div>
@@ -125,9 +138,7 @@
 
                         <!-- Action Section -->
                         <div class="action-section">
-                            <button type="button" 
-                                    class="btn btn-primary analyze-btn"
-                                    onclick="printTextColors()">
+                            <button type="button" class="btn btn-primary analyze-btn" onclick="printTextColors()">
                                 <i class="fas fa-search"></i>
                                 <span>Analizar Texto</span>
                                 <div class="btn-effect"></div>
@@ -170,33 +181,54 @@
         </div>
     </main>
 
+
     <!-- Footer -->
-    <footer class="main-footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-title">Limberth Vásquez Quesada</h3>
+                    <p class="footer-description">Software, Docencia y Música</p>
+                </div>
+
                 <div class="footer-info">
                     <h3 class="footer-title">Identificador de Vocales</h3>
                     <p class="footer-description">Herramienta educativa para análisis de texto</p>
                 </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/limberth.vasquezquesada/" class="social-link facebook"
+                        target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/limberth-v%C3%A1squez-490361150/" class="social-link linkedin"
+                        target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:limberthvaquez@gmail.com" class="social-link email" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
+
             <div class="footer-bottom">
-                <p class="copyright">
-                    © 2024 Todos los derechos reservados
+                <p class="copyright" id="copyright">
+                    © 2024 Limberth Vasquez Quesada. Todos los derechos reservados.
                 </p>
             </div>
         </div>
     </footer>
-
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/index.js"></script>
-    
+
     <!-- Character Counter Script -->
     <script>
-        document.getElementById('textContainer').addEventListener('input', function() {
+        document.getElementById('textContainer').addEventListener('input', function () {
             const charCount = this.value.length;
             document.getElementById('charCount').textContent = `${charCount} caracteres`;
         });
     </script>
+    <script src="../index.js"></script>
 </body>
+
 </html>
